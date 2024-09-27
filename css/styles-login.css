@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    width: 80px;
+    height: 80px;
+    margin-left: 180px;
+    margin-right: 10px;
+}
+.header .parte1 {
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    color: #ff4500;
+}
+.header .parte2 {
+    font-size: 32px;
+    padding-left: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+.header .parte3 {
+    font-size: 14px;
+    margin-right: 180px;
+    margin-left: auto;
+    color: #ff4500;  
+}
+.header a {
+    text-decoration: none;
+    color: #ff4500; 
+}
+
+main {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ff4500;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 97%;
+    padding: 10px;
+    margin: 4px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login-container .entre {
+    width: 97%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    background-color: #ff4500;
+}
+.login-container .entre:hover{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #ff4500;
+    background-color: #ffffff;
+}
+.login-container .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.login-container .links a {
+    font-size: 12px;
+    color: blue;
+}
+.login-container .or {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.login-container .or::before,
+.login-container .or::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #ccc;
+}
+.login-container .or::before {
+    margin-right: 10px;
+}
+.login-container .or::after {
+    margin-left: 10px;
+}
+.login-container .social-login {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+.login-container .social-login button {
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container .social-login button img {
+    width: 18px;
+    height: 18px;
+}
+.login-container .social-login button i {
+    margin-right: 5px;
+}
+.login-container .register {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.login-container .register a {
+    color: #ff4500;
+}
+footer {
+    background-color: #fff; 
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+}
+.opcoes { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+.opcoes li a {
+    text-align: left;
+    text-decoration: none;
+    color: #666;
+}
+
+.pagamentos ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 150px; 
+}
+
+.pagamentos li {
+    margin: 5px;
+}
+
+.pagamentos img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: contain;
+}
+footer a:hover {
+    color: #ff4500; 
+    text-decoration: none;
+}
+
+.siga {
+    text-align: left; 
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.social-icons img {
+    width: 18px; 
+    height: 18px;
+    margin-right: 8px;
+}
+
+.social-icons a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 7px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #ff4500; 
+    text-decoration: none;
+}
+
+.qrcode ul li img {
+    width: 80px;
+    height: 80px;
+    text-align: left; 
+    object-fit: contain;
+}
+.direito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 15px; 
+}
+
+
+/*RESPONSIVIDADE*/
+/* Mobile styles (screen width < 768px) */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header .parte1 {
+        font-size: 28px;
+    }
+
+    .header .parte2 {
+        font-size: 24px;
+    }
+
+    .header .parte3 {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .login-container .social-login button {
+        width: 48%;
+        margin: 5px 1%;
+    }
+
+    .login-container .or {
+        margin: 15px 0;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .login-container .entre {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .opcoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opcoes section {
+        margin-bottom: 20px;
+    }
+
+    .pagamentos ul {
+        justify-content: center;
+    }
+
+    .siga {
+        text-align: center;
+    }
+
+    .social-icons li {
+        justify-content: center;
+    }
+
+    .qrcode ul li {
+        text-align: center;
+    }
+}
